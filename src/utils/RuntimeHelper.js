@@ -39,6 +39,13 @@ def <<HANDLER>>(event, context):
     return "Hello World"
 `
       break
+    case 'apl':
+      result = `
+ res←<<HANDLER>> arg;context;event
+ event context←arg
+ res←'Hello World'
+`
+      break
     case 'ruby':
       result = `
 def <<HANDLER>>(event, context)

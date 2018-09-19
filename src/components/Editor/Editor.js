@@ -19,6 +19,7 @@ import React, { Component } from 'react'
 import AceEditor from 'react-ace'
 import crypto from 'crypto'
 import brace from 'brace' // eslint-disable-line
+// import 'brace/mode/apl' // not supported in brace
 import 'brace/mode/python'
 import 'brace/mode/ruby'
 import 'brace/mode/javascript'
